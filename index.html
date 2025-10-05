@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upzen - Elevate Without Limits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="WhatsApp Image 2025-10-05 at 21.36.10_219a403d.jpg" alt="Upzen Logo" class="logo-img">
+                    <span class="logo-text">Upzen</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="login-btn" onclick="openLoginModal()">Student Login</button></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Elevate Without Limits</h1>
+                <p>Empowering students with cutting-edge skills for tomorrow's challenges</p>
+                <button class="cta-btn" onclick="document.getElementById('courses').scrollIntoView()">Explore Courses</button>
+            </div>
+            <div class="hero-graphic">
+                <div class="arrow-up"></div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <div class="courses-grid">
+                    <div class="course-card" data-course="python">
+                        <div class="course-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p>Master the most versatile programming language</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('python')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="cpp">
+                        <div class="course-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>C/C++</h3>
+                        <p>Build strong programming fundamentals</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('cpp')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="excel">
+                        <div class="course-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3>Excel</h3>
+                        <p>Advanced spreadsheet skills for data analysis</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('excel')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="office">
+                        <div class="course-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Microsoft Office</h3>
+                        <p>Complete suite: Excel, Word, PowerPoint</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('office')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="powerbi">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Power BI</h3>
+                        <p>Transform data into actionable insights</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('powerbi')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="english">
+                        <div class="course-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Spoken English</h3>
+                        <p>Enhance communication and confidence</p>
+                        <div class="course-actions">
+                            <button class="details-btn" onclick="openCourseModal('english')">View Details</button>
+                            <button class="contact-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Upzen</h2>
+                        <p>Upzen is a dynamic student startup dedicated to empowering the next generation of leaders and innovators. Our mission is to equip students with cutting-edge skills and knowledge that transcend traditional boundaries, enabling them to achieve excellence without limits.</p>
+                        
+                        <p>Founded on the principles of accessible education and practical learning, we bridge the gap between academic theory and industry requirements. Our comprehensive courses are designed by experienced faculty members who bring real-world expertise to every lesson.</p>
+                        
+                        <p>At Upzen, we believe in fostering a community of learners who support each other's growth. Our innovative approach combines traditional teaching methods with modern technology, ensuring that every student receives personalized attention and guidance on their journey to success.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h4>Expert Faculty</h4>
+                                <p>Industry professionals with years of experience</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Practical Learning</h4>
+                                <p>Hands-on approach with real-world projects</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-certificate"></i>
+                                <h4>Certification</h4>
+                                <p>Recognized certificates upon course completion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-graphic"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Ready to start your learning journey? Get in touch with us!</p>
+                <button class="contact-main-btn" onclick="redirectToWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    Click Me - Connect on WhatsApp
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="WhatsApp Image 2025-10-05 at 21.36.10_219a403d.jpg" alt="Upzen Logo" class="footer-logo-img">
+                    <span>Upzen</span>
+                </div>
+                <div class="footer-info">
+                    <p>Founder: <strong>Jeya Samuel</strong></p>
+                    <p>&copy; 2025 Upzen. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Student Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-submit-btn">Login</button>
+            </form>
+            <p class="demo-info">Demo credentials: username: <strong>student</strong>, password: <strong>demo123</strong></p>
+        </div>
+    </div>
+
+    <!-- Course Details Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCourseModal()">&times;</span>
+            <div id="courseDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

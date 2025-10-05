@@ -1,0 +1,29 @@
+<!-- SVG Logo for Upzen -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72"/>
+      <stop offset="25%" style="stop-color:#2a5298"/>
+      <stop offset="50%" style="stop-color:#4a90e2"/>
+      <stop offset="75%" style="stop-color:#00d4aa"/>
+      <stop offset="100%" style="stop-color:#4dff88"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2"/>
+      <stop offset="100%" style="stop-color:#4dff88"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" stroke="#4dff88" stroke-width="3"/>
+  
+  <!-- Up arrow -->
+  <polygon points="70,120 100,60 130,120 115,120 115,140 85,140 85,120" fill="#4dff88" opacity="0.9"/>
+  
+  <!-- Additional smaller arrows for elevation effect -->
+  <polygon points="50,140 70,110 90,140 80,140 80,150 60,150 60,140" fill="#00d4aa" opacity="0.6"/>
+  <polygon points="110,140 130,110 150,140 140,140 140,150 120,150 120,140" fill="#00d4aa" opacity="0.6"/>
+  
+  <!-- Text "Up" -->
+  <text x="75" y="175" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#textGradient)">Upzen</text>
+</svg>
